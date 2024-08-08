@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { height, width } from "../../constants/constants";
+import { height, width } from "../../constants/measures";
 
 const styles = StyleSheet.create({
   Button: {

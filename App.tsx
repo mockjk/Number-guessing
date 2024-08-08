@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
-import { height, width } from "./src/constants/constants";
+import { height, width } from "./src/constants/measures";
 import { Button, Icon, TextInput } from "react-native-paper";
 import { useEffect, useState } from "react";
 import NumberButton from "./src/components/NumberButton";
@@ -37,6 +37,7 @@ export default function App() {
         style={styles.InputTrie}
         outlineColor="#373A40"
         placeholder={inputNumber?.toString()}
+        placeholderTextColor="#FFFFFF"
       />
       <Text
         style={styles.TriesText}
@@ -100,6 +101,7 @@ const styles = StyleSheet.create({
     width: width * 0.5,
     height: height * 0.5,
     flexWrap: "wrap",
+    justifyContent: "center",
     flexDirection: "row",
     gap: height * 0.0075,
   },
